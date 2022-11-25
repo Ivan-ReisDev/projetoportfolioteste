@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="scr/img/codigo.png">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="https: //fonts.googleapis.com/css2? family= Source+Sans+Pro:wght@200 & display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="scr/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfólio - Ivan Reis</title>
+</head>
+
+<body onload="carregamento()">
+        <div id="preloader">
+          <div class="inner">
+            <img src="scr/img/preloader.gif" alt="">
+          </div>
+      </div>
+    <div>
+        
+        <header>
+            <h1 class="logo animar-left"> &#60;/Ivan Reis&#62;</h1>
+            <nav>
+                <ul class="menu animar-left">
+                    <li><a href="#contato-footer" class="menuli">Contato</a></li>
+                    <li><a href="#sobre" class="menuli">Sobre</a></li>
+                    <li><a href="#projetos" class="menuli">Projetos</a></li>
+                    <li><a href="#tecnologias" class="menuli">Tecnologias</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="inicio ">
+            <div class="inicio-conteudo animar-left">
+                <span>&#60; / &#62;</span>
+                <h2 class="titulo">Desenvolvedor Web - <strong>Ivan Reis</strong></h2>
+                <p>Seja bem-vindo, conheça alguns dos meus projetos.</p>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre-top">
+                <div class="sobre-esquerda ">
+                    <h3>&#60;/Sobre &#62;</h3>
+                    <div class="texto">
+                        <div class="content">
+                            <p>Meu nome é Ivan Reis e sou estudante de Análise e Desenvolvimento de Sistemas, buscando
+                                sua
+                                primeira
+                                experiência na área da programação.
+                                Iniciando no desenvolvimento em 2022, tenho como foco atuar no front-end, me reconheço
+                                como
+                                entusiasta
+                                em novas tecnologias do mercado, buscando aprimorar minhas habilidades e aprender novas
+                                linguagens.</p>
+                            <p>Possuo foco em desenvolvimento com JavaScript, HTML5, CSS3, dentre outras tecnologias que
+                                uso
+                                para criar
+                                aplicações web de alto nível e valor.</p>
+                            <p>Me considero ágil em aprender novas linguagens e me adaptar a qualquer mudança, pronto
+                                para
+                                qualquer desafio!</p>
+                        </div>
+                    </div>
+                    <input type="button" id="button" value="Ler Mais" onclick="LerMais()" class="bnt">
+                    <img src="scr/img/Man thinking-amico.png" alt="">
+                </div>
+                <div class="sobre-direita">
+                    <img src="scr/img/Programmer-amico (1).png" alt="">
+                </div>
+            </div>
+            <div class="sobre-botton">
+                <div class="sobre-soft">
+
+                </div>
+                <div class="sobre-hard">
+
+                </div>
+            </div>
+        </section>
+        <section class="tecnologias animar-left" id="tecnologias">
+            <h3>&#60; /Tecnologias &#62;</h3>
+            <p>Ao longo dos meus estudos venho aprendendo algumas tecnologias, busco sempre melhorar e me aprimorar em cada uma delas, abaixo estão algumas.</p>
+            <div class="tecnologias-top">
+                <div class="card tecnologias-html" onclick="this.classList.toggle('expanded')">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="">
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">HTML5</h1>
+                            <div class="body-text">Linguagem de marcação utilizada na construção de páginas na Web</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+
+                <div class="card tecnologias-css" onclick="this.classList.toggle('expanded')">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="">
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">CSS3</h1>
+                            <div class="body-text">Cascading Style Sheets é um mecanismo para adicionar estilo a um
+                                documento web.</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+
+                <div class="card tecnologias-javascript" onclick="this.classList.toggle('expanded')">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="">
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">JavaScript</h1>
+                            <div class="body-text">É uma linguagem de programação interpretada estruturada.</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+            </div>
+            <div class="tecnologias-botton">
+                <div class="card tecnologias-python" onclick="this.classList.toggle('expanded')">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="">
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">Python</h1>
+                            <div class="body-text">Python é uma linguagem de programação de alto nível.</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+                <div class="card tecnologias-node" onclick="this.classList.toggle('expanded')">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">Node.js</h1>
+                            <div class="body-text">Node.js é um software de código aberto, multiplataforma.</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+
+                <div class="card tecnologias-sql" onclick="this.classList.toggle('expanded')">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                    <div class="text2">
+                        <div class="text-content">
+                            <h1 class="title">Mysql</h1>
+                            <div class="body-text">O MySQL é um sistema de gerenciamento de banco de dados</div>
+                        </div>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="projetos animar-left">
+            <h3>&#60; /Projetos &#62;</h3>
+            <div></div>
+            <div class="projetos swiffy-slider slider-item-show4 slider-item-show2-sm slider-item-reveal slider-item-nosnap slider-item-nosnap-touch slider-nav-round slider-nav-dark slider-nav-visible slider-nav-touch slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-nav-animation slider-nav-animation-fadein slider-nav-animation-slow"
+            data-slider-nav-autoplay-interval="4000">
+            <ul class="slider-container">
+                <li>
+                    <div id="slide1">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem1">
+                                        <div class="property-image-title">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Cadastro Nubank </h5>
+                                    <p>Página desenvolvida com as tecnologias HTML5 e CSS3</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide2">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem2">
+                                        <div class="property-image-title">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5>Calculadora de Boleto</h5>
+                                    <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum
+                                        doth be hard.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide3">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem3">
+                                        <div class="property-image-title">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5>Formulário</h5>
+                                    <p>Desenvolvido em HTML5 e CSS3 focando no uso do flexbox</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide4">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem4">
+                                        <div class="property-image-title">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Página de Login </h5>
+                                    <p>Desenvolvido em HTML5 e CSS3</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide5">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem5">
+                                        <div class="property-image-title">
+                                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Parallax </h5>
+                                    <p>Desenvolvido em HTML5 e CSS3 com foco no efeito parallax.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide6">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem6">
+                                        <div class="property-image-title">
+                                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Projeto Responsivo </h5>
+                                    <p>Desenvolvido em HTML5 e CSS3 com foco no responsivo para todas as telas e dispositivos.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons imagem2">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide7">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem7">
+                                        <div class="property-image-title">
+                                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Projeto Strata </h5>
+                                    <p>Desenvolvido em HTML5 e CSS3 de cunho acadêmico.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide8">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem8">
+                                        <div class="property-image-title">
+                                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5>Relógio Digital</h5>
+                                    <p>Projeto desenvolvido em HTML5, CSS3 e Javascript.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="slide9">
+                        <div class="center">
+                            <div class="property-card">
+                                <a href="#">
+                                    <div class="property-image imagem9">
+                                        <div class="property-image-title">
+                                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="property-description">
+                                    <h5> Leading Page </h5>
+                                    <p>Desenvolvido em HTML5 e CSS3 de cunho acadêmico.</p>
+                                </div>
+                                <a href="#">
+                                    <div class="property-social-icons">
+                                        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+    
+            <ul class="slider-indicators">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </section>
+        <footer>
+            <ul class="contato-footer" id="contato-footer">
+                <li><a href="https://github.com/Ivan-ReisDev" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ivan-reis-b93b32248/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5521985598348" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/ivan__reis/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+            </ul>
+            <p>Copyright &copy; 2022 - Ivan Reis<br>
+                Todos os direitos reservados</p>
+        </footer>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a838236c7b.js" crossorigin="anonymous"></script>
+    <script src="scr/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+</body>
+
+</html>
